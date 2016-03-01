@@ -25,14 +25,14 @@ class ResultViewController: UIViewController {
         
         correctLabel.text = String(answerCount) + "問正解"
         
-        if answerCount == 3 {
-            typeLabel.text = "ジェームズボンド"
+        if answerCount == 5 {
+            typeLabel.text = "ジェームズボンド級のスパイ"
             typeImage!.image = jam
-        } else if answerCount == 2 {
+        } else if answerCount == 4 || answerCount == 3 {
             typeLabel.text = "一流スパイ"
             typeImage!.image = spy
         } else {
-            typeLabel.text = "平凡"
+            typeLabel.text = "凡人"
             typeImage!.image = bon
         }
         // Do any additional setup after loading the view.
