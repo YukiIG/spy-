@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -10,11 +10,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="originalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="GQR-BQ-rDY"/>
+                        <viewControllerLayoutGuide type="bottom" id="OGe-OC-gom"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SPY試験" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsD-nJ-ANk">
@@ -31,7 +31,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="開始"/>
                                 <connections>
-                                    <segue destination="b7Z-8A-35Q" kind="show" id="wqp-Gd-WcT"/>
+                                    <segue destination="b7Z-8A-35Q" kind="modal" id="wqp-Gd-WcT"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="あなたの一般常識力、学力、スパイ力をテストします。不正行為は現状に処罰しますので、ご注意ください" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ki2-Uu-XvK">
@@ -49,26 +49,25 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="324.5" y="399.5"/>
+            <point key="canvasLocation" x="43.5" y="382.5"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="GSB-qV-Byk">
             <objects>
                 <viewController id="b7Z-8A-35Q" customClass="QuizViewController" customModule="originalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pOe-aS-Fnh"/>
-                        <viewControllerLayoutGuide type="bottom" id="ab8-yz-a7D"/>
+                        <viewControllerLayoutGuide type="top" id="CcJ-Wk-Ty3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Paa-V1-U3X"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3FS-0s-dHr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="u6A-i7-Wjz">
-                                <rect key="frame" x="20" y="110" width="335" height="264"/>
+                                <rect key="frame" x="20" y="93" width="280" height="266"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -76,32 +75,34 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K09-BF-hkU">
-                                <rect key="frame" x="20" y="405" width="335" height="35"/>
+                                <rect key="frame" x="7" y="405" width="306" height="35"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="choiceAnswer:" destination="b7Z-8A-35Q" eventType="touchUpInside" id="4bA-WR-Jlj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KO-VN-b0u">
-                                <rect key="frame" x="20" y="479" width="335" height="35"/>
+                                <rect key="frame" x="0.0" y="463" width="320" height="35"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="choiceAnswer:" destination="b7Z-8A-35Q" eventType="touchUpInside" id="x2o-kk-B4M"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhb-cE-Zb0">
-                                <rect key="frame" x="20" y="558" width="335" height="35"/>
+                                <rect key="frame" x="0.0" y="525" width="320" height="35"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="choiceAnswer:" destination="b7Z-8A-35Q" eventType="touchUpInside" id="UrA-48-wBE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="問題" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAz-sH-6Y1">
-                                <rect key="frame" x="152" y="52" width="71" height="36"/>
+                                <rect key="frame" x="125" y="37" width="71" height="36"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -111,71 +112,69 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="choiceButton1" destination="K09-BF-hkU" id="5dt-py-V8P"/>
                         <outlet property="choiceButton2" destination="6KO-VN-b0u" id="Ree-Bu-Cxf"/>
                         <outlet property="choiceButton3" destination="Zhb-cE-Zb0" id="MAL-WV-FMC"/>
                         <outlet property="mondai" destination="OAz-sH-6Y1" id="XpP-6B-kHt"/>
                         <outlet property="quizView" destination="u6A-i7-Wjz" id="Fop-AQ-2RV"/>
-                        <segue destination="DgR-07-Opf" kind="show" identifier="toResultView" id="iLf-80-Jjh"/>
+                        <segue destination="DgR-07-Opf" kind="modal" identifier="toResultView" id="iLf-80-Jjh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xN7-CI-4sc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874.5" y="399.5"/>
+            <point key="canvasLocation" x="466" y="378"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Rkx-dj-Cf3">
             <objects>
                 <viewController id="DgR-07-Opf" customClass="ResultViewController" customModule="originalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="u48-l4-1UM"/>
-                        <viewControllerLayoutGuide type="bottom" id="WV5-9z-wxE"/>
+                        <viewControllerLayoutGuide type="top" id="Vcu-b9-qsl"/>
+                        <viewControllerLayoutGuide type="bottom" id="DGI-XH-di4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9qk-M5-LmR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="n問正解！！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3A-Zd-hHb">
-                                <rect key="frame" x="67" y="20" width="268" height="69"/>
+                                <rect key="frame" x="32" y="20" width="268" height="69"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ジェームズボンド" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfD-SE-TsA">
-                                <rect key="frame" x="59" y="134" width="262" height="60"/>
+                                <rect key="frame" x="38" y="134" width="262" height="60"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2YC-o9-FGL">
-                                <rect key="frame" x="81" y="234" width="240" height="211"/>
+                                <rect key="frame" x="46" y="234" width="240" height="211"/>
                                 <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あなたは..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc9-aX-78J">
-                                <rect key="frame" x="53" y="97" width="93" height="29"/>
+                                <rect key="frame" x="32" y="97" width="93" height="29"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kM-Nf-cv5">
-                                <rect key="frame" x="138" y="522" width="104" height="47"/>
+                                <rect key="frame" x="117" y="501" width="104" height="47"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.60517168153130996" green="0.88116268943585807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="タイトルへ"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="ax0-Ei-JPN"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="ax0-Ei-JPN"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="correctLabel" destination="Z3A-Zd-hHb" id="bBW-bn-djz"/>
                         <outlet property="typeImage" destination="2YC-o9-FGL" id="uhL-Vk-tkJ"/>
@@ -184,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hIx-7w-9Pv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446.5" y="399.5"/>
+            <point key="canvasLocation" x="864" y="378"/>
         </scene>
     </scenes>
     <resources>
