@@ -1,9 +1,192 @@
-//
-//  3.5inch.storyboard
-//  originalQuiz
-//
-//  Created by yuki ishiguro on 2016/03/05.
-//  Copyright © 2016年 yk1209. All rights reserved.
-//
-
-import Foundation
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HzN-Lw-mgu">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GvI-RG-8Ly">
+            <objects>
+                <viewController id="HzN-Lw-mgu" customClass="ViewController" customModule="originalQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1xh-By-p2v"/>
+                        <viewControllerLayoutGuide type="bottom" id="FJd-EI-S7a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YBy-gX-OFS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SPY試験" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfI-Sg-QrZ">
+                                <rect key="frame" x="36" y="20" width="249" height="68"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="あなたの一般常識力、学力、スパイ力をテストします。不正行為は現状に処罰しますので、ご注意ください" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P4a-Me-Y6f">
+                                <rect key="frame" x="40" y="85" width="240" height="80"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spy.png" translatesAutoresizingMaskIntoConstraints="NO" id="uka-gN-Jfo">
+                                <rect key="frame" x="29" y="160" width="262" height="166"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nS-5K-6oQ">
+                                <rect key="frame" x="71" y="352" width="178" height="58"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.56878708529999999" green="0.73263539820000001" blue="0.98194126309999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="開始"/>
+                                <connections>
+                                    <segue destination="e7B-YM-Dv4" kind="modal" id="sR4-V7-b3h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="neu-j4-yO3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14" y="347"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="br2-Cr-r0z">
+            <objects>
+                <viewController id="e7B-YM-Dv4" customClass="QuizViewController" customModule="originalQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HJE-WH-76k"/>
+                        <viewControllerLayoutGuide type="bottom" id="CeS-hF-4EB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fjc-nH-7sb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wvA-sC-OnE">
+                                <rect key="frame" x="20" y="51" width="280" height="266"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpg-eN-W22">
+                                <rect key="frame" x="7" y="319" width="306" height="35"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="e7B-YM-Dv4" eventType="touchUpInside" id="VjN-2C-l1U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4B-6p-Zyl">
+                                <rect key="frame" x="0.0" y="368" width="320" height="35"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="e7B-YM-Dv4" eventType="touchUpInside" id="Sjt-CW-JAN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="問題" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqr-hY-59W">
+                                <rect key="frame" x="125" y="20" width="71" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4i-DZ-ban">
+                                <rect key="frame" x="0.0" y="411" width="320" height="35"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="e7B-YM-Dv4" eventType="touchUpInside" id="75i-ql-1wz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="choiceButton1" destination="jpg-eN-W22" id="Vcl-09-aYP"/>
+                        <outlet property="choiceButton2" destination="y4B-6p-Zyl" id="GPe-Hr-p9U"/>
+                        <outlet property="choiceButton3" destination="X4i-DZ-ban" id="lNe-yb-LWu"/>
+                        <outlet property="mondai" destination="Jqr-hY-59W" id="e35-2d-g2w"/>
+                        <outlet property="quizView" destination="wvA-sC-OnE" id="Q7c-DE-lg6"/>
+                        <segue destination="fXn-Uf-xRh" kind="modal" identifier="toResultView" id="Q4p-LM-R0o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgS-KH-78N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342.39999999999998" y="347.42666666666668"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="ywA-b3-MXk">
+            <objects>
+                <viewController id="fXn-Uf-xRh" customClass="ResultViewController" customModule="originalQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DEh-Q0-HF2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gct-7g-JH9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eid-U8-c9K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="n問正解！！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCP-Q3-nR8">
+                                <rect key="frame" x="35" y="0.0" width="268" height="69"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ジェームズボンド" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gy4-rs-dWO">
+                                <rect key="frame" x="35" y="83" width="262" height="60"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLD-9M-lUm">
+                                <rect key="frame" x="40" y="139" width="240" height="211"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あなたは..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fd-eH-hQG">
+                                <rect key="frame" x="35" y="68" width="93" height="29"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94n-7X-D0X">
+                                <rect key="frame" x="108" y="379" width="104" height="47"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.6051716815" green="0.88116268939999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="タイトルへ"/>
+                                <connections>
+                                    <segue destination="HzN-Lw-mgu" kind="modal" id="Hoq-IQ-hS5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="correctLabel" destination="FCP-Q3-nR8" id="No5-xO-Itz"/>
+                        <outlet property="typeImage" destination="fLD-9M-lUm" id="tbK-Qb-bME"/>
+                        <outlet property="typeLabel" destination="gy4-rs-dWO" id="AfL-0P-WcU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DiL-ga-mhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697" y="341"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="spy.png" width="256" height="256"/>
+    </resources>
+</document>

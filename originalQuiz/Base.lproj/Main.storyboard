@@ -10,22 +10,33 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="originalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GQR-BQ-rDY"/>
-                        <viewControllerLayoutGuide type="bottom" id="OGe-OC-gom"/>
+                        <viewControllerLayoutGuide type="top" id="fte-hi-zc7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zxd-5W-KRZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SPY試験" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsD-nJ-ANk">
-                                <rect key="frame" x="63" y="74" width="249" height="68"/>
+                                <rect key="frame" x="36" y="73" width="249" height="68"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="あなたの一般常識力、学力、スパイ力をテストします。不正行為は現状に処罰しますので、ご注意ください" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ki2-Uu-XvK">
+                                <rect key="frame" x="37" y="176" width="240" height="80"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spy.png" translatesAutoresizingMaskIntoConstraints="NO" id="MtP-3m-4vV">
+                                <rect key="frame" x="37" y="264" width="262" height="166"/>
+                                <animations/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqy-9q-XCC">
-                                <rect key="frame" x="99" y="479" width="178" height="58"/>
+                                <rect key="frame" x="79" y="481" width="178" height="58"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.56878708528738053" green="0.73263539824304713" blue="0.9819412630890052" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -34,17 +45,6 @@
                                     <segue destination="b7Z-8A-35Q" kind="modal" id="wqp-Gd-WcT"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="あなたの一般常識力、学力、スパイ力をテストします。不正行為は現状に処罰しますので、ご注意ください" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ki2-Uu-XvK">
-                                <rect key="frame" x="77" y="176" width="240" height="80"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spy.png" translatesAutoresizingMaskIntoConstraints="NO" id="MtP-3m-4vV">
-                                <rect key="frame" x="57" y="264" width="262" height="166"/>
-                                <animations/>
-                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -59,8 +59,8 @@
             <objects>
                 <viewController id="b7Z-8A-35Q" customClass="QuizViewController" customModule="originalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CcJ-Wk-Ty3"/>
-                        <viewControllerLayoutGuide type="bottom" id="Paa-V1-U3X"/>
+                        <viewControllerLayoutGuide type="top" id="zk1-QH-0oy"/>
+                        <viewControllerLayoutGuide type="bottom" id="2VU-Te-O0O"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3FS-0s-dHr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -130,8 +130,8 @@
             <objects>
                 <viewController id="DgR-07-Opf" customClass="ResultViewController" customModule="originalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Vcu-b9-qsl"/>
-                        <viewControllerLayoutGuide type="bottom" id="DGI-XH-di4"/>
+                        <viewControllerLayoutGuide type="top" id="VU4-Xx-uPO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZDX-Vz-VDh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9qk-M5-LmR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
