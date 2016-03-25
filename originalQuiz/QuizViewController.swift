@@ -36,6 +36,9 @@ class QuizViewController: UIViewController {
         tmpArray.append(["毛利小五郎の職業は？","スパイ","宇宙飛行士","探偵",3])
         tmpArray.append(["「失敗」はなんと読む？","スパイ","すっぱい","しっぱい",3])
         tmpArray.append(["目の前には扉が２つあります。１つは本当の扉ですが、もう１つは偽物の扉。どちらが本当の扉かを知っているのは、扉の前にいる２人の門番だけ。１人はウソをつかない正直者。もう一人はウソしかつかないアマノジャク。左右どちらが本物かはわかりません。２人のうちどちらかに１回だけ質問をして本当の扉を見やぶるには、どんな質問をすればよいでしょうか。","もう一人はどっちが本当の扉だと言うと思う？","あなたは右の扉が本当の扉だと思う？","左のとびらが本物ですか？",1])
+        tmpArray.append(["1+2+3+4+5+6+7+8+9+10=?","44","55","66",2])
+        tmpArray.append(["123*456=？","56088","44558","34538",1])
+        tmpArray.append(["初代ジェームズボンドを演じたのは誰？","スパイ","すっぱい","ショーン コネリー",3])
 
         //shuffle
         while(tmpArray.count > 0){
@@ -63,7 +66,7 @@ class QuizViewController: UIViewController {
         
         quizArray.removeAtIndex(0)
         
-        if quizArray.count == 0 {
+        if mondaiCount == 5 {
             performSegueToResult()
         } else {
             mondaiCount++

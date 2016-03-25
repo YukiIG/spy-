@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class ResultViewController: UIViewController {
     var answerCount: Int = 0
@@ -43,7 +44,25 @@ class ResultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func postToSNS(serviceType: String){
+        let myComposerView = SLComposeViewController(forServiceType: serviceType)
+        myComposerView.setInitialText("SPY試験結果\n\nあなたは..." + typeLabel.text!)
+        myComposerView.addImage(typeImage.image)
+        self.presentViewController(myComposerView, animated: true, completion: nil)
+    }
+    
+    @IBAction func uploadButton(){
+        let alertController = UIAlertController(title: "twitterへ投稿", message: nil, preferredStyle:  .ActionSheet)
+        let firstAction = UIAlertAction(title: "投稿する", style: .Default){
+                action in
+                self.postToSNS(SLServiceTypeTwitter)
+        }
+        let cancelAction = UIAlertAction(title: "キャンセル", style: .Cancel, handler: nil)
+        alertController.addAction(firstAction)
+        alertController.addAction(cancelAction)
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
